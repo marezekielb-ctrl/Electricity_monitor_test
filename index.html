@@ -2,38 +2,25 @@
 <html>
 <head>
   <title>Electricity Monitoring System</title>
-  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>Electricity Monitoring System</h1>
-  <p>Arduino ESP32 based power and cost monitoring prototype.</p>
+<button onclick="connect()">Connect ESP32</button>
+<button onclick="download()">Download CSV</button>
 
-  <div class="card">
-    <p>Voltage</p>
-    <h2 id="voltage">---</h2>
-  </div>
+<h3>Appliance 1</h3>
+<p>Current: <span id="i1">0</span> A</p>
+<p>Power: <span id="p1">0</span> W</p>
+<p>Energy: <span id="e1">0</span> Wh</p>
+<p>Cost: ₱<span id="c1">0</span></p>
 
-  <div class="card">
-    <p>Current</p>
-    <h2 id="current">---</h2>
-  </div>
+<h3>Appliance 2</h3>
+<p>Current: <span id="i2">0</span> A</p>
+<p>Power: <span id="p2">0</span> W</p>
+<p>Energy: <span id="e2">0</span> Wh</p>
+<p>Cost: ₱<span id="c2">0</span></p>
 
-  <div class="card">
-    <p>Power</p>
-    <h2 id="power">---</h2>
-  </div>
+<script src="script.js"></script>
 
-  <div class="card">
-    <p>Energy</p>
-    <h2 id="energy">---</h2>
-  </div>
-
-  <div class="card">
-    <p>Cost</p>
-    <h2 id="cost">---</h2>
-  </div>
-
-  <script src="script.js"></script>
 </body>
 </html>
